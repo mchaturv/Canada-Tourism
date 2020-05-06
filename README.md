@@ -10,7 +10,6 @@ Clone the project to your local system.
 
 An Editor where you can run Sprintboot project and MySQL
 
-
 ### Installing
 
 Import the whole project on your editor.
@@ -24,6 +23,7 @@ spring.datasource.password=<your password>
 ```
 
 Build the application.
+
 Once build successfully, run it on your local system. 
 
 After application runs successfully you see below in your console
@@ -37,6 +37,13 @@ After application runs successfully you see below in your console
 2020-03-05 15:55:15.110  INFO 17656 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
 2020-03-05 15:55:15.121  INFO 17656 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
 ```
+
+- Deploying the application
+
+```
+Deploy on your preffered choice
+```
+
 
 Now Open MySQL Workbench and verify the database "springbootdb" is created or not.
 Once verified that database is created, run the sql scripts given in "data.sql" file.
@@ -60,12 +67,13 @@ Your will get a success response "201 CREATED" with your user details
 
 ## Authors
 
-* **Nihir Shah** - *Initial work* - [Cloud Project](https://git.cs.dal.ca/npshah/cloud-project)
-* **Mayank Chaturvedi** - *Initial work* - [Cloud Project](https://git.cs.dal.ca/mayank/cloud-project)
-* **Sanjay Kumar** - *Initial work* - [Cloud Project](https://git.cs.dal.ca/npshah/cloud-project)
-* **Anshdeep Singh** - *Initial work* - [Cloud Project](https://git.cs.dal.ca/mayank/cloud-project)
+* **Mayank Chaturvedi** - *Work* - [Cloud Project](https://git.cs.dal.ca/mayank/cloud-project)
+
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Nihir Shah** - *Initial work* - [Cloud Project](https://git.cs.dal.ca/npshah/cloud-project)
+* **Sanjay Kumar** - *Initial work* - [Cloud Project](https://git.cs.dal.ca/npshah/cloud-project)
+* **Anshdeep Singh** - *Initial work* - [Cloud Project](https://git.cs.dal.ca/mayank/cloud-project)
 
 ## License
 
