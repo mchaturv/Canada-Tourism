@@ -67,7 +67,7 @@ Your will get a success response "201 CREATED" with your user details
 
 ## Authors
 
-* **Mayank Chaturvedi** - *Work* - [Cloud Project](https://git.cs.dal.ca/mayank/cloud-project)
+* **Mayank Chaturvedi** - *Work* - [Cloud Project](https://github.com/mchaturv/Canada-Tourism---User-Sevice)
 
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
