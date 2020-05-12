@@ -59,10 +59,8 @@ public class AdminUserController {
 	@ResponseStatus(value = HttpStatus.CREATED)
 	public ResponseEntity<?> addUser(@Valid @RequestBody User customer)
 	{
-		//System.out.println(customer);
 		customer.setCustomerType(new Role(1, "ADMIN"));
 		User user = customerManagementService.addUser(customer);
-		
 		URI location = ServletUriComponentsBuilder
                 .fromCurrentContextPath().path("/consumer/users/profile").build().toUri();
 		return ResponseEntity.created(location).allow(HttpMethod.GET).body(user);
