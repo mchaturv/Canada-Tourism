@@ -67,10 +67,8 @@ public class ConsumerUserController {
 	@PostMapping(value = "/user/register", consumes = "application/json;charset=UTF-8")
 	@ResponseStatus(value = HttpStatus.CREATED)
 	public ResponseEntity<?> addUser(@Valid @RequestBody User customer) {
-		System.out.println(customer);
 		customer.setCustomerType(new Role(2, "USER"));
 		User user = customerManagementService.addUser(customer);
-
 		URI location = ServletUriComponentsBuilder.fromCurrentContextPath().path("/consumer/users/profile").build()
 				.toUri();
 		return ResponseEntity.created(location).allow(HttpMethod.GET).body(user);
@@ -82,7 +80,6 @@ public class ConsumerUserController {
 
 		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 		String username = authentication.getName();
-
 		User user = customerManagementService.getCustomerByEmail(username).get();
 		return user;
 	}
@@ -180,8 +177,6 @@ public class ConsumerUserController {
 	@RequestMapping(value = "/validate2FA/{username}/{code}", method = RequestMethod.POST)
 	public JwtResponse posttwofactor(@PathVariable String code, @PathVariable String username) {
 		
-		//System.out.println(code+","+username);
-		//TwoFactorService twoFactorService=new TwoFactorService(username, code);
 		String token = twoFactorService.validateTwoFactor(username, code);
 				
 		if(!token.isEmpty()) {
@@ -203,8 +198,6 @@ public class ConsumerUserController {
 	@RequestMapping(value = "/validate2FA", method = RequestMethod.POST)
 	public JwtResponse posttwofactorAndroid(@RequestParam String code, @RequestParam String username) {
 		
-		//System.out.println(code+","+username);
-		//TwoFactorService twoFactorService=new TwoFactorService(username, code);
 		String token = twoFactorService.validateTwoFactor(username, code);
 				
 		if(!token.isEmpty()) {
