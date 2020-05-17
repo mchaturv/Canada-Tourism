@@ -48,8 +48,6 @@ public class UserRestExceptionHandler {
 			String errorString[] = message.split("'");
 			message = "Entity with provided name: " + errorString[1] + " already exists";
 
-			System.out.println(message);
-
 			ErrorResponse error = new ErrorResponse(HttpStatus.BAD_REQUEST.value(), message,
 					System.currentTimeMillis());
 			responseEntity = new ResponseEntity<>(error, HttpStatus.BAD_REQUEST);
@@ -107,7 +105,6 @@ public class UserRestExceptionHandler {
 		ResponseEntity<ErrorResponse> responseEntity = null;
 
 		String message = exe.getMessage();
-		System.out.println(message);
 		if (message.contains("Duplicate")) {
 			String errorString[] = message.split("'");
 			message = "Entity with provided name: " + errorString[1] + " already exists";
