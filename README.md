@@ -72,11 +72,3 @@ Your will get a success response "201 CREATED" with your user details
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 * **Nihir Shah** - *Initial work* - [Cloud Project](https://git.cs.dal.ca/npshah/cloud-project)
-* **Sanjay Kumar** - *Initial work* - [Cloud Project](https://git.cs.dal.ca/npshah/cloud-project)
-* **Anshdeep Singh** - *Initial work* - [Cloud Project](https://git.cs.dal.ca/mayank/cloud-project)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-
